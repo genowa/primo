@@ -1,51 +1,18 @@
 <html>
+<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+</head>
 <body>
-<style>
-#box {height:50px; }
-#message {
-	font-weight:bold;
-	font-family:Arial;
-	font-size:25px;
-	line-height:50px;
-	vertical-align:middle;
-}
-.wa {
-	float:left; height:50px; margin-right:20px;
-	vertical-align: middle;
-}
-</style>
+
 <div id="box">
-<img src="wa.png" class="wa" />
-<span id="message"></span>
+	<img src="wa.png" class="wa" />
+	<div id="msg">
+			<span id="message"></span>
+	</div>
 </div>
+<script src="frasi.js"></script>
+
 <script>
-
-var saluti = [
-		"",
-		"Buongiorno",
-		"Ciao",
-		"Gentilissimi"
-		];
-		
-var domanda = [
-	"volevo chiedere",
-	"mi interessava sapere",
-	"segnalo che"
-];
-var cosa = [
-	"le scuole sono chiuse",
-	"perche' l'autobus non passa",
-	"i cimiteri sono chiusi",
-	"le pizzerie consegnano"
-];
-
-var finale = [
-	"complimenti per la trasmissione",
-	"grazie",
-	"la saluto",
-	"grazie per il vostro servizio pubblico"
-];
-
 function getRandomArbitrary(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
@@ -55,5 +22,6 @@ document.getElementById("message").innerHTML = saluti[getRandomArbitrary(0, salu
 											   cosa[getRandomArbitrary(0, cosa.length)] + " " + 
 											   finale[getRandomArbitrary(0, finale.length)]
 </script>
+
 </body>
 </html>

@@ -6,13 +6,13 @@ var saluti = [
 ];
     
 var domanda = [
-    "volevo chiedere",
-    "mi interessava sapere",
+    "volevo chiedere perche'",
+    "mi interessava sapere come mai",
     "segnalo che"
 ];
 var cosa = [
     "le scuole sono chiuse",
-    "perche' l'autobus non passa",
+    "l'autobus non passa",
     "i cimiteri sono chiusi",
     "le pizzerie consegnano"
 ];

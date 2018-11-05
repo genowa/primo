@@ -23,3 +23,9 @@ var finale = [
     "la saluto",
     "grazie per il vostro servizio pubblico"
 ];
+
+var avviso = [
+    "Chiuse le scuole",
+    "Metropolitana limitata a Brin",
+    "Trenitalia: ritardo medio 165 minuti"
+];

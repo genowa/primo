@@ -1,27 +1,66 @@
 body {
+    background-color: #111;
+}
+.container {
+    position: relative;
     background-color: #eeeeee;
-}
-#box {
-    height:50px; 
-    background-color: #ffffff;
-    width: 80%;
-    margin-left:10%
-}
-#msg {
+    /*background-image: url('pp.jpg');*/
+    width: 75vw;  
+    height: 42.18vw;
+    margin:auto;
+ }
 
+#box-wa {
+    position: absolute;
+    height: 9%; 
+    background-color: #ffffff;
+    width: 86%;
+    margin-left:5.5%;
+
+    bottom: 15%;
 }
-#message {
-	font-weight:bold;
+
+#box-news {
+    position: absolute;
+    height: 9%; 
+    background-color: #ffffff;
+    width: 90%;
+    margin-left:5.5%;
+    bottom: 5%;
+}
+
+.font {
+    font-weight:bold;
 	font-family:Arial;
+}
+
+.avviso {
+    font-size:20px;
+    text-transform: uppercase;
+}
+
+.primocolore {
+    color: #95261d;
+}
+
+#message {
 	font-size:25px;
-	line-height:50px;
-	vertical-align:middle;
+    line-height:50px;
+
     text-overflow: clip;
     overflow: hidden;
     white-space: nowrap;
     display: block;
 }
+
 .wa {
-	float:left; height:50px; margin-right:20px;
-	vertical-align: middle;
+    float:left; 
+    height:100%; 
+    margin-right:20px;
+}
+
+.pr {
+    float:right; 
+    height:100%; 
+    margin-left:20px;
 }

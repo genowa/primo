@@ -1,14 +1,23 @@
 <html>
 <head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-
-<div id="box">
-	<img src="wa.png" class="wa" />
-	<div id="msg">
-			<span id="message"></span>
-	</div>
+<div class="container">
+		<div id="box-wa">
+				<img src="wa.png" class="wa" />
+				<div id="msg">
+						<span id="message" class="font"></span>
+				</div>
+			</div>
+			<div id="box-news">
+				<img src="pr.png" class="pr" />
+				<div id="msg">
+						<span id="titolo" class="font avviso primocolore">Maltempo</span><br/>
+						<span id="avviso" class="font avviso"></span>
+				</div>
+			</div>
 </div>
 <script src="frasi.js"></script>
 
@@ -20,7 +29,9 @@ function getRandomArbitrary(min, max) {
 document.getElementById("message").innerHTML = saluti[getRandomArbitrary(0, saluti.length)] + " " + 
 											   domanda[getRandomArbitrary(0, domanda.length)] + " " + 
 											   cosa[getRandomArbitrary(0, cosa.length)] + " " + 
-											   finale[getRandomArbitrary(0, finale.length)]
+											   finale[getRandomArbitrary(0, finale.length)];
+
+document.getElementById("avviso").innerHTML = avviso[getRandomArbitrary(0, avviso.length)];
 </script>
 
 </body>

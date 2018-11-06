@@ -33,6 +33,11 @@ body {
     height: 48%;
     width: 96%;
 }
+
+#imgleft img {
+    position: absolute;
+}
+
 #box-wa {
     position: absolute;
     height: 9%; 

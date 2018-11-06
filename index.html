@@ -11,11 +11,16 @@
 		<div id="box-right">
 		<img src="imgs/ig.png" style="height: 20px; float: left;" /> 
 		<span style="color:white; text-shadow: 2px 2px #333;">genowave</span> <br/>
-		<img src="imgs/A_A_F_A_F.png" style="width:100%" />
+		<embed src="imgs/liguria.svg" style="width:100%;height: 100%;" id="svge" type="image/svg+xml"/>
 		</div>
 		<div id="box-images">
-			<img src="https://via.placeholder.com/500x500" style="width:49.5%; height: 100%; float: left;" id="imgleft"/>
-			<img src="https://via.placeholder.com/500x500" style="width:49.5%; height: 100%;  float: right;" id="imgright"/>
+			<div  style="width:49.5%; height: 100%; float: left; position: relative;" id="imgleft">
+				<img src="https://via.placeholder.com/500x500" style="height: 100%; width:100%;"/>
+				<img src="imgs/primocanale_green.png" style="height: 100%; width:100%; z-index: 10;"/>
+			</div>
+			<div  style="width:49.5%; height: 100%; float: right;">					
+				<img src="https://via.placeholder.com/500x500" style="height: 100%; width:100%;" id="imgright"/>
+			</div>
 		</div>
 		<div id="box-wa">
 				<img src="imgs/wa.png" class="wa" />
@@ -45,6 +50,40 @@ document.getElementById("message").innerHTML = saluti[getRandomArbitrary(0, salu
 
 document.getElementById("avviso").innerHTML = avviso[getRandomArbitrary(0, avviso.length)];
 document.getElementById("imgright").src = 'imgs/meteo/'+getRandomArbitrary(1, 4)+'.jpg';
+
+var colors = [
+	'#72edbe',
+	'#18d0ea',
+	'#fc72d2'
+];
+var colornames = [
+	'ACQUAMARINA',
+	'AZZURRA',
+	'FUCSIA'
+];
+
+window.addEventListener("load", function(){
+	var sv = document.getElementById("svge").getSVGDocument();
+
+	var randA = getRandomArbitrary(0, 3);
+	var randB = getRandomArbitrary(0, 3);
+	var randC = getRandomArbitrary(0, 3);
+	var randD = getRandomArbitrary(0, 3);
+	var randE = getRandomArbitrary(0, 3);
+
+	sv.getElementById('pathA').setAttribute("fill", colors[randA]);
+	sv.getElementById('pathB').setAttribute("fill", colors[randB]);
+	sv.getElementById('pathC').setAttribute("fill", colors[randC]);
+	sv.getElementById('pathD').setAttribute("fill", colors[randD]);
+	sv.getElementById('pathE').setAttribute("fill", colors[randE]);
+
+	sv.getElementById('areaA').innerHTML = colornames[randA];
+	sv.getElementById('areaB').innerHTML = colornames[randB];
+	sv.getElementById('areaC').innerHTML = colornames[randC];
+	sv.getElementById('areaD').innerHTML = colornames[randD];
+	sv.getElementById('areaE').innerHTML = colornames[randE];
+});
+
 </script>
 
 </body>

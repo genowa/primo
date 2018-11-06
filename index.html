@@ -14,8 +14,8 @@
 		<img src="imgs/A_A_F_A_F.png" style="width:100%" />
 		</div>
 		<div id="box-images">
-			<img src="https://via.placeholder.com/500x500" style="width:49.5%; height: 100%; float: left;"/>
-			<img src="https://via.placeholder.com/500x500" style="width:49.5%; height: 100%;  float: right;"/>
+			<img src="https://via.placeholder.com/500x500" style="width:49.5%; height: 100%; float: left;" id="imgleft"/>
+			<img src="https://via.placeholder.com/500x500" style="width:49.5%; height: 100%;  float: right;" id="imgright"/>
 		</div>
 		<div id="box-wa">
 				<img src="imgs/wa.png" class="wa" />
@@ -44,6 +44,7 @@ document.getElementById("message").innerHTML = saluti[getRandomArbitrary(0, salu
 											   finale[getRandomArbitrary(0, finale.length)];
 
 document.getElementById("avviso").innerHTML = avviso[getRandomArbitrary(0, avviso.length)];
+document.getElementById("imgright").src = 'imgs/meteo/'+getRandomArbitrary(1, 4)+'.jpg';
 </script>
 
 </body>
